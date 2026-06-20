@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Nikhil Dutt</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #525659;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 2rem;
+        }
+
+        /* Controls visible only on browser screen view */
+        .no-print-header {
+            width: 100%;
+            max-width: 850px;
+            margin: 1.5rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-print {
+            background-color: #0f766e;
+            color: #ffffff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        .btn-print:hover { background-color: #0d5e58; }
+        .btn-back { color: #cbd5e1; text-decoration: none; font-size: 0.9rem; }
+        .btn-back:hover { color: #ffffff; }
+        
+        .resume {
+            width: 100%;
+            max-width: 850px;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            color: #000;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #2e528b;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #4b7bb8;
+            margin: 0 0 5px 0;
+        }
+        .contact {
+            font-size: 10pt;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2e528b;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2e528b;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+
+        .text-block {
+            font-size: 9.5pt;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 10px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-company {
+            color: #4b7bb8;
+        }
+        .job-date-loc {
+            font-style: italic;
+            text-align: right;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+
+        .skills-line {
+            font-size: 9.5pt;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .skills-title {
+            font-weight: bold;
+            color: #2e528b;
+        }
+
+        .certs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 20px;
+            font-size: 9.5pt;
+        }
+
+        @media (max-width: 768px) {
+            .certs-grid { grid-template-columns: 1fr; }
+            .no-print-header { flex-direction: column; gap: 12px; text-align: center; }
+            .resume { padding: 25px 20px; }
+            .name { font-size: 22pt; }
+            .job-header { flex-direction: column; gap: 4px; }
+            .job-date-loc { text-align: left; }
+        }
+        
+        @media print {
+            body { background: none; padding: 0; }
+            .no-print-header { display: none; }
+            .resume { box-shadow: none; width: 100%; padding: 0; margin: 0; }
+            @page { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print-header">
+        <a href="/" class="btn-back">&larr; Back to Portfolio Website</a>
+        <div style="font-size: 0.85rem; opacity: 0.8;">PDF Layout Optimized</div>
+        <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <div class="resume">
+        <div class="header">
+            <h1 class="name">NIKHIL DUTT</h1>
+            <div class="subtitle">Digital Marketing &bull; Social Media &bull; Growth Marketing &bull; Project Coordination</div>
+            <div class="contact">+91-7289072548 | duttnikhil61@gmail.com | New Delhi, India</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">PROFESSIONAL SUMMARY</div>
+            <div class="text-block">
+                Results-oriented BBA (Marketing) candidate with a proven track record of driving digital strategy, lead generation, and brand visibility. Proficient in Social Media Management, Meta Ads Manager, Content Creation, SEO, and CRM-driven campaign execution. Demonstrated ability to identify growth opportunities, conduct market research, and support business development initiatives.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">WORK EXPERIENCE</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div><span class="job-title">Marketing & Finance Intern</span> | <span class="job-company">Agile Capital Services</span></div>
+                    <div class="job-date-loc">Jun 2025 – Aug 2025 • New Delhi, India</div>
+                </div>
+                <ul>
+                    <li>Executed targeted client outreach and telecalling campaigns within the BFSI vertical, significantly contributing to lead generation and business development objectives.</li>
+                    <li>Managed CRM databases with high accuracy, tracking lead status and ensuring seamless follow-up sequences for the sales team to improve conversion rates.</li>
+                    <li>Developed engaging content for telecalling scripts and digital messaging, optimizing outreach performance and response rates across multiple channels.</li>
+                    <li>Collaborated with cross-functional teams to bridge documentation gaps, improving customer engagement processes and overall data integrity.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><span class="job-title">Human Resource Management Intern</span> | <span class="job-company">Holograd India</span></div>
+                    <div class="job-date-loc">May 2025 – Jul 2025 • Delhi, India</div>
+                </div>
+                <ul>
+                    <li>Supported end-to-end recruitment lifecycles, including candidate sourcing, screening, and interview coordination to streamline hiring workflows.</li>
+                    <li>Maintained comprehensive employee records and payroll documentation using Excel and internal HRIS, ensuring 100% compliance with organizational standards.</li>
+                    <li>Partnered with hiring managers to refine role requirements and schedule interviews, enhancing overall process efficiency and candidate experience.</li>
+                    <li>Facilitated onboarding sessions for new hires, ensuring accurate data capture and a smooth transition into the company culture.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div><span class="job-title">Bachelor of Business Administration (BBA)</span> | <span class="job-company">Asian School of Business, Noida</span></div>
+                    <div class="job-date-loc">Sep 2023 – Jun 2026</div>
+                </div>
+                <ul>
+                    <li>Specializing in Marketing with a focus on Digital Strategies, Growth Marketing, and Performance Marketing.</li>
+                    <li>Actively engaged in academic projects involving Market Research, Consumer Behavior analysis, and Campaign Management.</li>
+                    <li>Participated in various seminars and workshops on emerging trends in Digital Marketing and Advertising.</li>
+                </ul>
+            </div>
+
+            <div class="job" style="margin-top:8px;">
+                <div class="job-header">
+                    <div><span class="job-title">Schooling in Commerce</span> | <span class="job-company">SLS DAV Public School, New Delhi</span></div>
+                    <div class="job-date-loc">Jan 2008 – Jan 2023</div>
+                </div>
+                <div style="font-size: 9.5pt; padding-left: 20px;">Activities: Commerce Society, Cultural Events</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">PROJECTS</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Digital Marketing & Growth Projects</div>
+                    <div class="job-date-loc">2024 – 2025</div>
+                </div>
+                <ul>
+                    <li><strong>Social Media Strategy:</strong> Engineered a comprehensive content calendar and mock social campaigns using Canva and Buffer, focusing on engagement metrics and brand visibility.</li>
+                    <li><strong>SEO & Content Plan:</strong> Conducted in-depth keyword research and drafted on-page SEO recommendations for a small-scale website, prioritizing high-intent search terms.</li>
+                    <li><strong>Ad Campaign Simulation:</strong> Designed targeted ad copy and audience segmentation strategies for Meta Ads, simulating high-ROAS performance marketing campaigns.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">SKILLS</div>
+            <div class="skills-line"><span class="skills-title">Marketing Skills:</span> Digital Marketing • Growth Marketing • Lead Generation • Content Strategy • Brand Awareness</div>
+            <div class="skills-line"><span class="skills-title">Digital Marketing & Advertising:</span> Meta Ads Manager • Google Ads • SEM • Performance Marketing • Campaign Management</div>
+            <div class="skills-line"><span class="skills-title">Analytical & Research Skills:</span> Market Research • Data Analytics • Google Analytics • Risk Analysis • SEO • Keyword Research</div>
+            <div class="skills-line"><span class="skills-title">Tools & Technical Skills:</span> Canva • Wix • AI Tools for Marketing • MS Office Suite (Excel, PowerPoint, Word) • CRM</div>
+            <div class="skills-line"><span class="skills-title">Soft Skills:</span> Communication • Problem Solving • Teamwork • Strategic Thinking • Adaptability • Business Ethics</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CERTIFICATIONS & TRAINING</div>
+            <div class="certs-grid">
+                <div>Executive Certificate in Social Media Marketing · Asian School of Business</div>
+                <div>Diploma in Media Applications · Asian School of Business</div>
+                <div>Certificate in Family Business Management · Asian School of Business</div>
+                <div>Digital Marketing Workshop · E-Cell IIT Roorkee</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

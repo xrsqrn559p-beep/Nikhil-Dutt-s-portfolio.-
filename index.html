@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    
+    <!-- SEO Metadata -->
+    <title>Nikhil Dutt | Growth Marketing, Digital Marketing & Project Coordination</title>
+    <meta name="description" content="Professional portfolio of Nikhil Dutt, a BBA Marketing Graduate specializing in Growth Marketing, Google Ads campaign design, and Startup Operations." />
+    <meta name="keywords" content="Nikhil Dutt, Growth Marketing, Digital Marketing Professional, BBA Marketing Graduate, Performance Marketing, Meta Ads, CRM Lead Generation, SEO, Project Coordinator, New Delhi" />
+    <meta name="author" content="Nikhil Dutt" />
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Nikhil Dutt | Growth Marketing, Digital Marketing & Project Coordination" />
+    <meta property="og:description" content="BBA Marketing Graduate from Asian School of Business with hands-on experience in lead generation, CRM tracking, and campaign execution." />
+    <meta property="og:image" content="/profile.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Three.js for 3D Globe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <!-- Background Elements -->
+    <div class="bg-grid"></div>
+    <canvas id="premium-3d-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header id="header">
+      <div class="container nav-container">
+        <a href="#hero" class="logo-link" id="logo">
+          NIKHIL DUTT
+        </a>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#experience" class="nav-item">Experience</a></li>
+            <li><a href="#projects" class="nav-item">Case Studies</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#certifications" class="nav-item">Credentials</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Let's Connect</a>
+          <button id="download-cv-btn" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Download CV</button>
+        </div>
+        <button id="mobile-toggle" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container hero-wrapper">
+          <div class="hero-content reveal">
+            <span class="hero-tag">High-Potential early-career professional</span>
+            <h1 class="hero-headline">Nikhil Dutt</h1>
+            <p style="font-family: var(--font-heading); font-size: clamp(1.2rem, 2.5vw, 1.8rem); font-weight: 500; color: var(--accent); margin-bottom: 1rem; letter-spacing: -0.01em;">
+              Growth Marketer | Social Media & Campaign Management | Project Coordination
+            </p>
+            <p class="hero-subheadline">
+              I help businesses build a stronger online presence through structured marketing execution, content planning, and project management. A BBA Marketing Graduate passionate about business growth, digital strategy, and campaign execution.
+            </p>
+            <div class="hero-ctas">
+              <button id="hero-primary-cta" class="btn btn-primary">Explore Portfolio</button>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-image-container reveal">
+            <div class="hero-image-wrapper" id="hero-img-card">
+              <img id="profile-img" src="/profile.jpg" alt="Nikhil Dutt - Professional Headshot" />
+            </div>
+            <div class="hero-deco-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Highlights (Social Proof) -->
+      <section id="highlights" class="highlights-section">
+        <div class="container">
+          <div class="highlights-grid">
+            <div class="highlight-card" data-tilt>
+              <span class="highlight-val">BBA</span>
+              <span class="highlight-lbl">Marketing Graduate</span>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <span class="highlight-val">70%</span>
+              <span class="highlight-lbl">ASB Noida Score</span>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <span class="highlight-val">2</span>
+              <span class="highlight-lbl">Internships Completed</span>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <span class="highlight-val">4</span>
+              <span class="highlight-lbl">Professional Certificates</span>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <span class="highlight-val">5</span>
+              <span class="highlight-lbl">Business Case Studies</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="executive-summary" class="reveal" style="background-color: var(--bg-secondary); padding: 5rem 0;">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 3rem;">Executive Summary</h2>
+          <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+              I am a results-oriented <strong>Growth Marketer, Social Media Associate & Project Coordinator</strong> with a proven track record of designing and executing high-ROI digital campaigns. Specializing in data-driven strategy, my focus is strictly on continuous growth, scaling operations, and driving sustainable revenue for global enterprises.
+            </p>
+            <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.7;">
+              My approach bridges the gap between creative marketing and analytical rigor. Whether managing complex cross-functional projects, optimizing CRM pipelines, or running high-budget Meta/Google Ad campaigns, I operate with the precision and professionalism demanded by top-tier consulting firms and global tech giants.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="reveal">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                I am Nikhil Dutt, a recent BBA graduate with a strong interest in business strategy, digital marketing, product management, project management, startup operations, and growth-focused business functions. I am naturally curious about how businesses scale, how products succeed, how teams collaborate, and how technology is transforming industries.
+              </p>
+              <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                My focus is on continuous learning, problem-solving, communication, execution, and developing practical business skills that create real-world impact. I enjoy analyzing business opportunities, understanding customer needs, improving processes, and exploring innovative ways to drive growth.
+              </p>
+              <p style="font-size: 1.05rem; color: var(--text-secondary);">
+                As I begin my professional journey, I am seeking opportunities where I can contribute, learn from experienced professionals, and build a strong foundation for a long-term career in business, growth, product, or operations roles. I am particularly drawn to dynamic environments where cross-functional collaboration and data-driven insights are at the core of decision making.
+              </p>
+            </div>
+            <div class="vision-card">
+              <h3>Career Vision</h3>
+              <p style="margin-bottom: 1.5rem;">
+                My long-term vision is to become a business leader capable of managing products, projects, teams, and growth initiatives that create meaningful impact. I believe successful businesses are built through strong execution, customer understanding, data-driven decisions, and continuous innovation.
+              </p>
+              <h4 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 1rem;">Core Interests</h4>
+              <ul class="vision-list">
+                <li>
+                  <svg class="vision-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Growth & Digital Marketing
+                </li>
+                <li>
+                  <svg class="vision-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Project Coordination & Operations
+                </li>
+                <li>
+                  <svg class="vision-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Product Thinking & Business Strategy
+                </li>
+                <li>
+                  <svg class="vision-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Startup Ecosystems & Scale Operations
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Philosophy Section -->
+      <section id="philosophy" class="reveal" style="background-color: var(--bg-secondary); padding: 5rem 0;">
+        <div class="container">
+          <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 2rem;">Core Philosophy</h2>
+            <p style="font-size: 1.25rem; font-family: var(--font-heading); font-style: italic; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+              "Growth isn't just about spending more on ads; it's about deeply understanding the customer journey, identifying bottlenecks, and executing structured strategies that drive compounding value."
+            </p>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; text-align: left; margin-top: 3rem;">
+              <div style="flex: 1; min-width: 250px; background: var(--bg-primary); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent);">01. Data-Informed Intuition</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">I rely on analytics to guide strategy, but I trust customer empathy to craft the actual message. Numbers tell you what is happening; empathy tells you why.</p>
+              </div>
+              <div style="flex: 1; min-width: 250px; background: var(--bg-primary); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent);">02. Relentless Execution</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">Ideas are cheap; execution is everything. I focus on actionable roadmaps, strict timelines, and continuous iteration to turn strategies into results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="reveal">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Professional Experience</h2>
+          
+          <div class="timeline">
+            <!-- Agile Capital Services -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card" data-tilt>
+                <div class="timeline-header">
+                  <div class="timeline-title">
+                    <h3>Marketing & Finance Intern</h3>
+                    <span class="timeline-company">Agile Capital Services</span>
+                  </div>
+                  <span class="timeline-date">June 2025 – August 2025</span>
+                </div>
+                <ul class="timeline-contribs">
+                  <li>Executed client outreach campaigns and generated leads for the BFSI sector.</li>
+                  <li>Maintained databases and managed lead tracking via CRM platforms.</li>
+                  <li>Supported business development initiatives and improved client follow-up pipelines.</li>
+                  <li>Assisted customer engagement activities and primary market research.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">CRM</span>
+                  <span class="tag">Lead Generation</span>
+                  <span class="tag">Sales Support</span>
+                  <span class="tag">Business Development</span>
+                  <span class="tag">Communication</span>
+                  <span class="tag">Market Research</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Holograd India -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card" data-tilt>
+                <div class="timeline-header">
+                  <div class="timeline-title">
+                    <h3>Human Resource Management Intern</h3>
+                    <span class="timeline-company">Holograd India</span>
+                  </div>
+                  <span class="timeline-date">May 2025 – July 2025</span>
+                </div>
+                <ul class="timeline-contribs">
+                  <li>Sourced candidate profiles and screened resumes for tech/business roles.</li>
+                  <li>Coordinated interviews and managed candidate communication.</li>
+                  <li>Created HR documentation and managed employee records using Microsoft Excel.</li>
+                  <li>Supported onboarding operations and recruitment process management.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag">Communication</span>
+                  <span class="tag">Documentation</span>
+                  <span class="tag">Excel</span>
+                  <span class="tag">Coordination</span>
+                  <span class="tag">Recruitment</span>
+                  <span class="tag">Process Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects / Case Studies Section (The 5 custom projects) -->
+      <section id="projects" class="reveal">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Business Projects & Case Studies</h2>
+          
+          <div class="projects-wrapper">
+            <!-- Project 1: Marketing Strategy for boAt -->
+            <div class="project-card size-1-3 data-tilt" data-project-id="1">
+              <div class="project-card-image" style="aspect-ratio: 1 / 1; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="/boat-strategy.png" alt="boAt D2C Strategy Case Study" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" />
+              </div>
+              <div class="project-meta">
+                <span class="project-num">Case Study 01</span>
+                <h3 class="project-title">Marketing Strategy for a D2C Brand (boAt)</h3>
+                <p class="project-desc">
+                  An analytical breakdown of boAt's market penetration, highlighting distribution gaps, product opportunities, and strategic growth recommendations.
+                </p>
+              </div>
+              <div class="project-details">
+                <div class="project-tools">
+                  <span class="tool-tag">Market Strategy</span>
+                  <span class="tool-tag">Competitive SWOT</span>
+                  <span class="tool-tag">Growth Ideation</span>
+                </div>
+                <div class="project-link">
+                  Read Case Study
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Instagram Growth Strategy -->
+            <div class="project-card size-1-3 data-tilt" data-project-id="2">
+              <div class="project-card-image" style="aspect-ratio: 1 / 1; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="/instagram-growth.png" alt="Instagram Strategy Case Study" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" />
+              </div>
+              <div class="project-meta">
+                <span class="project-num">Case Study 02</span>
+                <h3 class="project-title">Instagram Brand Growth Strategy</h3>
+                <p class="project-desc">
+                  A concrete, execution-ready 30-day content calendar outline mapping out engagement workflows, reel templates, story triggers, and metric KPIs.
+                </p>
+              </div>
+              <div class="project-details">
+                <div class="project-tools">
+                  <span class="tool-tag">Canva</span>
+                  <span class="tool-tag">Content pillars</span>
+                  <span class="tool-tag">KPI Tracking</span>
+                </div>
+                <div class="project-link">
+                  Read Case Study
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Google Ads Case Study -->
+            <div class="project-card size-1-3 data-tilt" data-project-id="3">
+              <div class="project-card-image" style="aspect-ratio: 1 / 1; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="/google-ads.png" alt="Google Ads Funnel Case Study" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" />
+              </div>
+              <div class="project-meta">
+                <span class="project-num">Case Study 03</span>
+                <h3 class="project-title">Google Ads Paid Campaign Architecture</h3>
+                <p class="project-desc">
+                  A search marketing campaign structure setting up high-conversion keyword matrices, bid strategy models, and funnel tracking parameters.
+                </p>
+              </div>
+              <div class="project-details">
+                <div class="project-tools">
+                  <span class="tool-tag">Meta Ads</span>
+                  <span class="tool-tag">Bidding Strategy</span>
+                  <span class="tool-tag">SEM Search</span>
+                </div>
+                <div class="project-link">
+                  Read Case Study
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Notion Project Management System -->
+            <div class="project-card size-1-2 data-tilt" data-project-id="4">
+              <div class="project-card-image" style="aspect-ratio: 1 / 1; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="/notion-dashboard.png" alt="Notion Campaign Dashboard Case Study" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" />
+              </div>
+              <div class="project-meta">
+                <span class="project-num">Case Study 04</span>
+                <h3 class="project-title">Notion Marketing & Project Dashboard</h3>
+                <p class="project-desc">
+                  A custom structured Notion workspace blueprint designed for agency campaign operations, outlining tasks, content timelines, and asset management.
+                </p>
+              </div>
+              <div class="project-details">
+                <div class="project-tools">
+                  <span class="tool-tag">Notion Workspace</span>
+                  <span class="tool-tag">Kanban Board</span>
+                  <span class="tool-tag">Task Priorities</span>
+                </div>
+                <div class="project-link">
+                  Open Interactive Dashboard
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Business Growth Audit -->
+            <div class="project-card size-1-2 data-tilt" data-project-id="5">
+              <div class="project-card-image" style="aspect-ratio: 1 / 1; overflow: hidden; border-bottom: 1px solid var(--border-color);">
+                <img src="/blinkit-audit.png" alt="Blinkit Growth Operations Case Study" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);" />
+              </div>
+              <div class="project-meta">
+                <span class="project-num">Case Study 05</span>
+                <h3 class="project-title">Business Growth Audit (Blinkit)</h3>
+                <p class="project-desc">
+                  A structural examination of Blinkit's hyper-local supply chain dark stores, highlighting user journey pain points and basket size growth models.
+                </p>
+              </div>
+              <div class="project-details">
+                <div class="project-tools">
+                  <span class="tool-tag">Blinkit Audit</span>
+                  <span class="tool-tag">UX Case Study</span>
+                  <span class="tool-tag">Supply Operations</span>
+                </div>
+                <div class="project-link">
+                  Read Case Study
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="reveal">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Core Skills</h2>
+          
+          <div class="skills-grid">
+            <!-- Marketing Skills -->
+            <div class="skill-category">
+              <h3>Marketing</h3>
+              <div class="skill-list">
+                <span class="tag">Digital Marketing</span>
+                <span class="tag">Growth Marketing</span>
+                <span class="tag">Performance Marketing</span>
+                <span class="tag">Content Strategy</span>
+                <span class="tag">Lead Generation</span>
+                <span class="tag">Brand Awareness</span>
+                <span class="tag">Campaign Management</span>
+              </div>
+            </div>
+
+            <!-- Advertising Skills -->
+            <div class="skill-category">
+              <h3>Advertising</h3>
+              <div class="skill-list">
+                <span class="tag">Meta Ads Manager</span>
+                <span class="tag">Google Ads</span>
+                <span class="tag">SEM</span>
+                <span class="tag">Audience Targeting</span>
+                <span class="tag">Ad Planning</span>
+              </div>
+            </div>
+
+            <!-- Research & Analytics -->
+            <div class="skill-category">
+              <h3>Research & Analytics</h3>
+              <div class="skill-list">
+                <span class="tag">Market Research</span>
+                <span class="tag">Data Analytics</span>
+                <span class="tag">Google Analytics</span>
+                <span class="tag">Consumer Insights</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Keyword Research</span>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+              <h3>Tools</h3>
+              <div class="skill-list">
+                <span class="tag">Notion</span>
+                <span class="tag">Canva</span>
+                <span class="tag">ChatGPT</span>
+                <span class="tag">Google Workspace</span>
+                <span class="tag">Excel (Basic Formulas)</span>
+                <span class="tag">PowerPoint</span>
+                <span class="tag">CRM Platforms</span>
+                <span class="tag">Wix</span>
+              </div>
+            </div>
+
+            <!-- Operations -->
+            <div class="skill-category">
+              <h3>Operations & Projects</h3>
+              <div class="skill-list">
+                <span class="tag">Project Management</span>
+                <span class="tag">CRM Databases</span>
+                <span class="tag">Market Research</span>
+                <span class="tag">Task Prioritization</span>
+                <span class="tag">Process Mapping</span>
+                <span class="tag">Onboarding Support</span>
+              </div>
+            </div>
+
+            <!-- Mindset -->
+            <div class="skill-category">
+              <h3>Strengths & Mindset</h3>
+              <div class="skill-list">
+                <span class="tag">Communication</span>
+                <span class="tag">Teamwork</span>
+                <span class="tag">Problem Solving</span>
+                <span class="tag">Strategic Thinking</span>
+                <span class="tag">Adaptability</span>
+                <span class="tag">Business Ethics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Tools Section -->
+      <section id="tech-stack" class="reveal" style="background-color: var(--bg-secondary); padding: 5rem 0;">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 3rem;">Technical Stack & Tools</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+            <div style="background: var(--bg-primary); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--accent);">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                Marketing & Analytics
+              </h3>
+              <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 0.9rem; line-height: 2;">
+                <li>• Google Analytics (GA4)</li>
+                <li>• Google Ads & Meta Ads</li>
+                <li>• HubSpot CRM</li>
+                <li>• Semrush / Ahrefs (SEO)</li>
+              </ul>
+            </div>
+            <div style="background: var(--bg-primary); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--accent-secondary);">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Operations & PM
+              </h3>
+              <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 0.9rem; line-height: 2;">
+                <li>• Notion & Asana</li>
+                <li>• Jira / Trello</li>
+                <li>• Microsoft Excel (Beginner)</li>
+                <li>• Slack & MS Teams</li>
+              </ul>
+            </div>
+            <div style="background: var(--bg-primary); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-top: 3px solid var(--accent);">
+              <h3 style="font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Design & Creative
+              </h3>
+              <ul style="list-style: none; padding: 0; color: var(--text-muted); font-size: 0.9rem; line-height: 2;">
+                <li>• Visily & Miro</li>
+                <li>• Canva Pro</li>
+                <li>• CapCut</li>
+                <li>• Gamma</li>
+                <li>• Mailchimp</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="reveal">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Credentials & Education</h2>
+          
+          <div class="certs-grid">
+            <!-- BBA Degree -->
+            <div class="cert-card academic">
+              <span class="cert-badge">Academic Degree</span>
+              <h3 class="cert-title">Bachelor of Business Administration (BBA - Marketing)</h3>
+              <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 0.25rem;">Academic Performance: 70%</p>
+              <p class="cert-issuer">Asian School of Business, Noida (Graduated 2026)</p>
+            </div>
+
+            <!-- Social Media Cert -->
+            <div class="cert-card">
+              <span class="cert-badge">Professional Certificate</span>
+              <h3 class="cert-title">Executive Certificate in Social Media Marketing</h3>
+              <p class="cert-issuer">Asian School of Business</p>
+            </div>
+
+            <!-- Family Business Cert -->
+            <div class="cert-card">
+              <span class="cert-badge">Professional Certificate</span>
+              <h3 class="cert-title">Certificate in Family Business Management</h3>
+              <p class="cert-issuer">Asian School of Business</p>
+            </div>
+
+            <!-- Media Diploma -->
+            <div class="cert-card">
+              <span class="cert-badge">Academic Diploma</span>
+              <h3 class="cert-title">Diploma in Media Applications</h3>
+              <p class="cert-issuer">Asian School of Business</p>
+            </div>
+
+            <!-- IIT Roorkee Workshop -->
+            <div class="cert-card">
+              <span class="cert-badge">Industrial Workshop</span>
+              <h3 class="cert-title">Digital Marketing Masterclass</h3>
+              <p class="cert-issuer">E-Cell, IIT Roorkee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning & Strengths Section -->
+      <section id="learning" class="reveal">
+        <div class="container">
+          <div class="learning-layout">
+            <div class="learning-intro">
+              <h2>Learning & Professional Mindset</h2>
+              <p>
+                I strongly believe that professional growth comes from continuous learning and consistent execution. As a recent graduate, I am actively building practical knowledge across modern domains that drive business success.
+              </p>
+              <div class="learning-focus">
+                <h3 style="font-size: 1.1rem; margin-bottom: 1.25rem; color: var(--text-primary);">Current Professional Focus Areas</h3>
+                <ul class="focus-list">
+                  <li class="focus-item"><span class="focus-dot"></span>Performance Marketing & Funnel Architecture</li>
+                  <li class="focus-item"><span class="focus-dot"></span>Project Coordination Methods (Agile/Scrum basics)</li>
+                  <li class="focus-item"><span class="focus-dot"></span>Product Thinking & Customer UX Analysis</li>
+                  <li class="focus-item"><span class="focus-dot"></span>AI Applications in Business Productivity</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 2rem;">Professional Competencies</h3>
+              <div class="strengths-grid">
+                <div class="strength-card">
+                  <div class="strength-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Communication
+                  </div>
+                  <p class="strength-desc">Structured reporting, active listening, and concise business correspondence.</p>
+                </div>
+                <div class="strength-card">
+                  <div class="strength-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Fast Learner
+                  </div>
+                  <p class="strength-desc">Highly capable of digesting new toolsets, industries, and data structures quickly.</p>
+                </div>
+                <div class="strength-card">
+                  <div class="strength-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    Analytical Thinking
+                  </div>
+                  <p class="strength-desc">Translating metrics into insights, separating assumptions from verified data.</p>
+                </div>
+                <div class="strength-card">
+                  <div class="strength-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9.09 9 2.18 5.44a.5.5 0 0 0 .91 0L14.36 9"/></svg>
+                    Ownership Mindset
+                  </div>
+                  <p class="strength-desc">Taking complete responsibility for project tasks, tracking delivery deadlines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Work With Me -->
+      <section id="why-hire-me" class="reveal">
+        <div class="container">
+          <div class="hireme-card">
+            <div class="hireme-content">
+              <h2>Why Work With Me</h2>
+              <p>
+                I bring a combination of active curiosity, strong business foundations from my BBA training, and internship experience in both human resources and lead generation campaigns. 
+              </p>
+              <p>
+                I approach early-career roles with extreme professionalism, a high sense of accountability, and a core commitment to creating tangible business value.
+              </p>
+            </div>
+            <div>
+              <ul class="hireme-values">
+                <li class="hireme-value">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Execution Focused
+                </li>
+                <li class="hireme-value">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Rapid Tool Adaptation
+                </li>
+                <li class="hireme-value">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Recruiter & Team First
+                </li>
+                <li class="hireme-value">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Growth Mindset
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="reveal">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Let's Connect</h2>
+          
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div style="margin-bottom: 1rem;">
+                <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                  I am open to growth-focused career roles, internships, and opportunities in:
+                </p>
+                <div class="timeline-tags" style="margin-top: 1rem;">
+                  <span class="tag" style="border-color: var(--accent); color: var(--accent); background: var(--accent-light);">Growth Marketing</span>
+                  <span class="tag" style="border-color: var(--accent); color: var(--accent); background: var(--accent-light);">Digital Marketing</span>
+                  <span class="tag" style="border-color: var(--accent); color: var(--accent); background: var(--accent-light);">Project Coordination</span>
+                  <span class="tag" style="border-color: var(--accent); color: var(--accent); background: var(--accent-light);">Startup Operations</span>
+                  <span class="tag" style="border-color: var(--accent); color: var(--accent); background: var(--accent-light);">Product Coordination</span>
+                </div>
+              </div>
+
+              <!-- Contact Cards -->
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email Me</div>
+                  <a href="mailto:duttnikhil61@gmail.com" class="contact-value">duttnikhil61@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <a href="https://linkedin.com/in/btwnikhil" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/btwnikhil</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Call / WhatsApp</div>
+                  <a href="tel:+917289072548" class="contact-value">+91 7289072548</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">New Delhi, India</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+              <form id="portfolio-contact-form" action="https://formsubmit.co/duttnikhil61@gmail.com" method="POST">
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New message from your Portfolio Website!">
+                
+                <div class="form-group half-width-row">
+                  <div>
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required />
+                    <span class="error-message" id="name-error">Please enter your name</span>
+                  </div>
+                  <div>
+                    <label for="company">Company / Organization</label>
+                    <input type="text" id="company" name="company" class="form-control" placeholder="Acme Corp" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="jane@company.com" required />
+                  <span class="error-message" id="email-error">Please enter a valid work email</span>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message *</label>
+                  <textarea id="message" name="message" class="form-control" placeholder="Describe the role or project opportunity..." required></textarea>
+                  <span class="error-message" id="message-error">Please enter a message</span>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <div>
+          <p style="font-size: 0.85rem; font-weight: 500;">&copy; 2026 Nikhil Dutt. All rights reserved.</p>
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">BBA Marketing Graduate &bull; Aspiring Growth Marketing Professional</p>
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/btwnikhil" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:duttnikhil61@gmail.com" class="social-link" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- STICKY / FLOATING CONTROLS -->
+    <div class="floating-actions">
+      <button id="float-linkedin" class="float-btn" data-tooltip="LinkedIn" aria-label="Connect on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </button>
+      <button id="float-email" class="float-btn" data-tooltip="Email" aria-label="Send Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </button>
+      <button id="float-cv" class="float-btn" data-tooltip="Download Resume" aria-label="Download Resume">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+    </div>
+
+    <!-- PROJECT CASE STUDY MODAL -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+      <div class="modal-window" data-lenis-prevent>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close Case Study Details">&times;</button>
+        <div id="modal-body-content" class="modal-body">
+          <!-- Dynamic details filled by main.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SUCCESS MESSAGE POPUP -->
+    <div id="success-popup" class="success-toast" role="alert">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/><path d="m9 12 2 2 4-4"/></svg>
+      <span>Message sent successfully!</span>
+    </div>
+
+    <!-- Vite module scripts -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
