@@ -242,7 +242,11 @@ const revealObserver = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
       } else {
-        entry.target.classList.remove('active');
+        // Prevent flickering loop: only remove 'active' if element exits from the bottom
+        // (meaning the user scrolled back up past it)
+        if (entry.boundingClientRect.top > 0) {
+          entry.target.classList.remove('active');
+        }
       }
     });
   },
