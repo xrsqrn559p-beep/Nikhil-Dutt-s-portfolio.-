@@ -69,6 +69,9 @@ if (canvas3D && window.THREE) {
   function animateTorus() {
     requestAnimationFrame(animateTorus);
 
+    // Optimize: Do not render 3D canvas if scrolled past the hero section to save massive CPU/GPU!
+    if (window.scrollY > window.innerHeight) return;
+
     targetX = mouseX * 0.001;
     targetY = mouseY * 0.001;
 
@@ -131,15 +134,14 @@ let followerX = 0, followerY = 0;
 window.addEventListener('mousemove', (e) => {
   cursorX = e.clientX;
   cursorY = e.clientY;
-  cursor.style.left = `${cursorX}px`;
-  cursor.style.top = `${cursorY}px`;
+  // Use hardware-accelerated transform instead of top/left layout trashing
+  cursor.style.transform = `translate3d(calc(${cursorX}px - 50%), calc(${cursorY}px - 50%), 0)`;
 });
 
 function animateCursor() {
   followerX += (cursorX - followerX) * 0.15;
   followerY += (cursorY - followerY) * 0.15;
-  follower.style.left = `${followerX}px`;
-  follower.style.top = `${followerY}px`;
+  follower.style.transform = `translate3d(calc(${followerX}px - 50%), calc(${followerY}px - 50%), 0)`;
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
